@@ -59,9 +59,6 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * Indentation
  * </li>
  * <li>
- * InterfaceIsType
- * </li>
- * <li>
  * InterfaceMemberImpliedModifier
  * </li>
  * <li>
@@ -69,12 +66,6 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * </li>
  * <li>
  * JavadocType
- * </li>
- * <li>
- * MethodCount
- * </li>
- * <li>
- * MissingJavadocMethod
  * </li>
  * <li>
  * MissingJavadocType
@@ -102,9 +93,6 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * </li>
  * <li>
  * VariableDeclarationUsageDistance
- * </li>
- * <li>
- * WriteTag
  * </li>
  * </ul>
  * <p>
@@ -140,6 +128,9 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * </li>
  * <li>
  * SummaryJavadoc
+ * </li>
+ * <li>
+ * WriteTag
  * </li>
  * </ul>
  * <p>
