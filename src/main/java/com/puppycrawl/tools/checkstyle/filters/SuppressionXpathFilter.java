@@ -65,19 +65,15 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * JavadocMethod
  * </li>
  * <li>
- * JavadocType
- * </li>
- * <li>
  * MissingJavadocType
  * </li>
  * <li>
- * PackageDeclaration
+ * Regexp (reason is at
+ * <a href="https://github.com/checkstyle/checkstyle/issues/7759#issuecomment-605525287"> #7759</a>)
  * </li>
  * <li>
- * Regexp
- * </li>
- * <li>
- * RegexpSinglelineJava
+ * RegexpSinglelineJava (reason is at
+ * <a href="https://github.com/checkstyle/checkstyle/issues/7759#issuecomment-605525287"> #7759</a>)
  * </li>
  * <li>
  * TodoComment
@@ -90,6 +86,15 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * </li>
  * <li>
  * VariableDeclarationUsageDistance
+ * </li>
+ * </ul>
+ * <p>
+ * Certain Checks are partially supported by the filter:
+ * </p>
+ * <ul>
+ * <li>
+ * PackageDeclaration (until
+ * <a href="https://github.com/checkstyle/checkstyle/pull/8110">#8110</a>)
  * </li>
  * </ul>
  * <p>
@@ -113,6 +118,9 @@ import com.puppycrawl.tools.checkstyle.utils.FilterUtil;
  * </li>
  * <li>
  * JavadocTagContinuationIndentation
+ * </li>
+ * <li>
+ * JavadocType
  * </li>
  * <li>
  * MissingDeprecated
@@ -545,6 +553,7 @@ public class SuppressionXpathFilter extends AutomaticBean implements
 
     /**
      * Setter to specify the location of the <em>suppressions XML document</em> file.
+     *
      * @param fileName name of the suppressions file.
      */
     public void setFile(String fileName) {
@@ -556,6 +565,7 @@ public class SuppressionXpathFilter extends AutomaticBean implements
      * If optional is set to false the file must exist, or else it ends with error.
      * On the other hand if optional is true and file is not found,
      * the filter accepts all audit events.
+     *
      * @param optional tells if config file existence is optional.
      */
     public void setOptional(boolean optional) {

@@ -375,7 +375,7 @@
              see no old versions -->
         <plugin>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.8</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
@@ -626,6 +626,7 @@
               <logViolationsToConsole>true</logViolationsToConsole>
               <maxAllowedViolations>0</maxAllowedViolations>
               <violationSeverity>error</violationSeverity>
+              <cacheFile>${project.build.directory}/cachefile_sevntu</cacheFile>
               <propertyExpansion>project.basedir=${project.basedir}</propertyExpansion>
               <sourceDirectories>
                 <sourceDirectory>${project.basedir}/src</sourceDirectory>
