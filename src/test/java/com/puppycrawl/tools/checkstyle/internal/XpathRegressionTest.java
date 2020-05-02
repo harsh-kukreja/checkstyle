@@ -55,12 +55,9 @@ public class XpathRegressionTest extends AbstractModuleTestSupport {
     // till https://github.com/checkstyle/checkstyle/issues/5777
     public static final Set<String> INCOMPATIBLE_CHECK_NAMES =
         Collections.unmodifiableSet(new HashSet<>(Arrays.asList(
-            "AvoidEscapedUnicodeCharacters",
-            "CommentsIndentation",
             "CustomImportOrder",
             "EmptyLineSeparator",
             "Indentation",
-            "InterfaceMemberImpliedModifier",
             "JavadocMethod",
             "MissingJavadocType",
             "Regexp (reason is at  #7759)",

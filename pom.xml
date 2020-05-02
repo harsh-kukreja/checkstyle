@@ -12,7 +12,7 @@
 
   <groupId>com.puppycrawl.tools</groupId>
   <artifactId>checkstyle</artifactId>
-  <version>8.32-SNAPSHOT</version>
+  <version>8.33-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>checkstyle</name>
@@ -1395,7 +1395,7 @@
       <plugin>
         <groupId>de.thetaphi</groupId>
         <artifactId>forbiddenapis</artifactId>
-        <version>2.7</version>
+        <version>3.0</version>
         <configuration>
           <targetVersion>${java.version}</targetVersion>
           <failOnUnsupportedJava>false</failOnUnsupportedJava>
